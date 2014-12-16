@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <!-- 強制的にスコープ開始をここで呼び出す -->
+    <f:event type="preRenderView" listener="#{conversationScopedCounterBean.initConversation()}"/>
+    <h:head>
+        <title>conversationScopedCounter_index</title>
+    </h:head>
+    <h:body>
+        conversationScopedCounter_index
+        <h:form id="conCntFrm">
+            <!-- スコープからの値取得 -->
+            <h:outputText id="conCnt" value="#{conversationScopedCounterBean.count}" />
+            <h:commandButton value="カウントアップ" actionListener="#{conversationScopedCounterBean.countUp()}"/> 
+            <h:commandButton value="next" action="#{conversationScopedCounterBean.clickNext()}" />
+        </h:form>
+       <h:link value="index" outcome="index.xhtml"/>
+
+    </h:body>
+</html>
+
