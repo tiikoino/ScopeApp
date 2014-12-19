@@ -5,7 +5,7 @@ import javax.inject.Named;
 import javax.enterprise.context.Dependent;
 
 @Named(value = "dependentCounterBean")
-@Dependent
+@Dependent  //スコープ宣言
 public class DependentCounterBean {
 
     public DependentCounterBean() {    }

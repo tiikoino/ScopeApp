@@ -6,7 +6,7 @@ import java.io.Serializable;
 import javax.annotation.PostConstruct;
 
 @Named(value = "sessionScopedCounterBean")
-@SessionScoped
+@SessionScoped  //スコープ宣言
 public class SessionScopedCounterBean implements Serializable {
 
     public SessionScopedCounterBean() {    }

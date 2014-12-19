@@ -5,7 +5,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
 @ManagedBean(name = "viewScopedCounterBean")
-@ViewScoped
+@ViewScoped  //スコープ宣言
 public class ViewScopedCounterBean {
 
     public ViewScopedCounterBean() {    }

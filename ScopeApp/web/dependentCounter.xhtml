@@ -8,7 +8,9 @@
     <h:body>
         dependentCounter
         <h:form id="depCntFrm">
+            <!-- スコープからの値取得 -->
             <h:outputText id="depCnt" value="#{dependentCounterBean.count}" />
+            <!-- ManagedBeanのメソッド呼び出し -->
             <h:commandButton value="カウントアップ" actionListener="#{dependentCounterBean.countUp()}" 
                              action="dependentCounter.xhtml" />
         </h:form>

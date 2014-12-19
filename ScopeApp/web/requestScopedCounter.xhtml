@@ -10,6 +10,7 @@
         <h:form id="reqCntFrm">
             <!-- スコープからの値取得 -->
             <h:outputText id="reqCnt" value="#{requestScopedCounterBean.count}" />
+            <!-- ManagedBeanのメソッド呼び出し -->
             <h:commandButton value="カウントアップ" actionListener="#{requestScopedCounterBean.countUp()}" 
                              action="requestScopedCounter.xhtml" />
         </h:form>

@@ -5,7 +5,7 @@ import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
 
 @Named(value = "requestScopedCounterBean")
-@RequestScoped
+@RequestScoped  //スコープ宣言
 public class RequestScopedCounterBean {
 
     public RequestScopedCounterBean() {    }

@@ -6,7 +6,7 @@ import javax.inject.Named;
 import javax.faces.flow.FlowScoped;
 
 @Named(value = "flowScopedCounterBean")
-@FlowScoped("flowScopedCounter")
+@FlowScoped("flowScopedCounter")// スコープ宣言("Flow構成ファイルにて定義したFlowID")
 public class FlowScopedCounterBean {
 
     public FlowScopedCounterBean() {    }

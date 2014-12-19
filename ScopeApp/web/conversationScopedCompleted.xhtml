@@ -10,7 +10,9 @@
         <h:form id="conCntFrm">
             <!-- スコープからの値取得 -->
             <h:outputText id="conCnt" value="#{conversationScopedCounterBean.count}" />
+            <!-- ManagedBeanのメソッド呼び出し -->
             <h:commandButton value="カウントアップ" actionListener="#{conversationScopedCounterBean.countUp()}" />
+            <!-- clickCompleted()メソッド内で スコープ終了処理が実施され、スコープが破棄される -->
             <h:commandButton value="end" action="#{conversationScopedCounterBean.clickCompleted()}" />
         </h:form>
        <h:link value="index" outcome="index.xhtml"/>

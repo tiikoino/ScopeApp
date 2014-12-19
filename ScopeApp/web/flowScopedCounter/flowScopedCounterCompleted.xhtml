@@ -10,6 +10,7 @@
         <h:form id="flowCntFrm">
             <!-- スコープからの値取得 -->
             <h:outputText id="flowCnt" value="#{flowScopedCounterBean.count}" />
+            <!-- ManagedBeanのメソッド呼び出し -->
             <h:commandButton value="カウントアップ" actionListener="#{flowScopedCounterBean.countUp()}" />
             <h:commandButton value="next" action="index" />
         </h:form>

@@ -26,7 +26,7 @@ public class ConversationScopedCounterBean implements Serializable {
     }
 
     // スコープの開始メソッド
-    //conversationScopedIndex.xhtml先頭でf:eventにて強制的に呼び出す
+    //conversationScopedIndex.xhtml先頭でf:eventにて呼び出す
     public void initConversation() {
         // ポストバックでなくて、且つ、スコープが開始されてなかったら
         if (!FacesContext.getCurrentInstance().isPostback()
